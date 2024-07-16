@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/resStyle.css" />
+    <style>
+      body {
+        transition: background-color 0.3s, color 0.3s;
+      }
+    </style>
+  </head>
+  <body class="bg-dark-subtle text-dark">
+    <section class="vh-100">
+      <div class="container h-100">
+        <div
+          class="row d-flex justify-content-center align-items-center vh-100"
+        >
+          <div class="result-container">
+            <!-- <div class="result-header">Your Result is there</div> -->
+            <div class="result-body">
+              <div class="status">You Failed!</div>
+              <div class="score">0%</div>
+              <div class="score-label">YOUR OVERALL SCORE</div>
+            </div>
+            <div class="result-footer">
+              <div class="low">
+                <div class="dot"></div>
+                <div>Low</div>
+              </div>
+              <div class="medium">
+                <div class="dot"></div>
+                <div>Medium</div>
+              </div>
+              <div class="high">
+                <div class="dot"></div>
+                <div>High</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="btn-group position-absolute"
+      style="width: 30px; top: 0; right: 80px"
+    >
+      <button class="btn btn-dark" data-bs-theme-value="dark">🌙</button>
+      <button class="btn btn-light" data-bs-theme-value="light">☀</button>
+    </div>
+    <script src="../assets//js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/darkmodetoggle.js"></script>
+    <script src="../js/result.js"></script>
+  </body>
+</html>
