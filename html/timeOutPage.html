@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="resStyle.css" />
+    <style>
+      body {
+        transition: background-color 0.3s, color 0.3s;
+      }
+    </style>
+  </head>
+  <body class="bg-dark-subtle text-dark">
+    <section class="vh-100">
+      <div class="container h-100">
+        <div
+          class="row d-flex justify-content-center align-items-center vh-100"
+        >
+          <div class="result-container">
+            <div class="result-header">Time Out</div>
+            <div class="result-body">
+              <div class="status">You Failed!</div>
+            </div>
+
+            <button class="btn btn-success">Try Again !</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="btn-group position-absolute"
+      style="width: 30px; top: 0; right: 80px"
+    >
+      <button class="btn btn-dark" data-bs-theme-value="dark">🌙</button>
+      <button class="btn btn-light" data-bs-theme-value="light">☀</button>
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/darkmodetoggle.js"></script>
+    <script>
+      document
+        .querySelector(".btn-success")
+        .addEventListener("click", function () {
+          window.location.href = "login.html";
+        });
+    </script>
+  </body>
+</html>
